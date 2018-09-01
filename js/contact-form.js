@@ -24,15 +24,15 @@ Ajax Contact Form
         // get the form data
         var formData = {
             'name' : $('input[name="form-name"]').val(),
-            'email' : $('input[name="form-email"]').val(),
-            'subject' : $('input[name="form-subject"]').val(),
+            '_replyto' : $('input[name="form-email"]').val(),
+            '_subject' : $('input[name="form-subject"]').val(),
             'message' : $('textarea[name="form-message"]').val()
         };
 
         // process the form
         $.ajax({
             type : 'POST',
-            url  : 'process.php',
+            url  : 'https://mailthis.to/clothclinicpune@gmail.com',
             data : formData,
             dataType : 'json',
             encode : true
