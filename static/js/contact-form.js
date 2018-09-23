@@ -22,18 +22,18 @@ Ajax Contact Form
         $('.help-block').remove();
 
         // get the form data
-        var formData = {
-            'name' : $('input[name="form-name"]').val(),
-            '_replyto' : $('input[name="form-email"]').val(),
-            '_subject' : $('input[name="form-subject"]').val(),
-            'message' : $('textarea[name="form-message"]').val()
-        };
+        // var formData = {
+        //     'name' : $('input[name="form-name"]').val(),
+        //     '_replyto' : $('input[name="form-email"]').val(),
+        //     '_subject' : $('input[name="form-subject"]').val(),
+        //     'message' : $('textarea[name="form-message"]').val()
+        // };
 
         $.post('https://mailthis.to/clothclinicpune@gmail.com', {
-          'name' : $('input[name="form-name"]').val(),
-          '_replyto' : $('input[name="form-email"]').val(),
-          '_subject' : $('input[name="form-subject"]').val(),
-          'message' : $('textarea[name="form-message"]').val()
+          'name' : $('input[name="name"]').val(),
+          '_replyto' : $('input[name="email"]').val(),
+          '_subject' : $('input[name="_subject"]').val(),
+          'message' : $('textarea[name="message"]').val()
         }).then(function () {
           location.href = 'https://mailthis.to/confirm'
         });

@@ -1,5 +1,5 @@
 ## Dev instructions
-cd your_project
+cd /Users/karan_sharma1/Desktop/CC_Website
 source env/bin/activate
 python main.py
 
@@ -10,7 +10,7 @@ gcloud app deploy
 gcloud app browse
 
 ## Setup
-cd /Users/karan_sharma1/Desktop/CC_app2
+cd /Users/karan_sharma1/Desktop/CC_Website
 virtualenv env
 source env/bin/activate
 pip install  -r requirements.txt
